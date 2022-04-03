@@ -303,18 +303,6 @@ h1{
     color: rgb(0, 0, 0);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Media Queries */
 
 @media screen and (max-width: 767px) {
@@ -339,6 +327,7 @@ h1{
         width: 15px;
         height: 15px;
     }
+    
 }
 
 
