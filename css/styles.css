@@ -94,7 +94,7 @@ h1{
     color: #fff;
     box-shadow: 1px 1px 5px rgb(173, 171, 171);
     border: solid rgba(3, 133, 255, 0) 2px;
-    background-image: url(/root/assets/img/fondotarjetabody.jpg);
+    background-image: url(../assets/img/fondotarjetabody.jpg);
     width: 200px;
     font-family: 'Poppins', sans-serif;
     font-size: 11px;
