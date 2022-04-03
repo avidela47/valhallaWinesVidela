@@ -72,9 +72,17 @@ body{
     text-decoration: none;
     color: white;
     font-size: 20px;
+    background: linear-gradient(to bottom right, red, yellow);
+   -webkit-background-clip: text;
+   background-clip: text; 
+   -webkit-text-fill-color: transparent;
 }
 .navbar .menu a:hover{
-    background: black
+    background:linear-gradient(180deg, #fbde74 0%, #ff9900 100%);
+    transition: all .3s;
+    -webkit-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 .navbar .menu-bar{
     display: none;
