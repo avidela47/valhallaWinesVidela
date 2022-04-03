@@ -212,7 +212,7 @@ h1{
 .card__producccion-1{
     grid-column: 1/2;
     grid-row: 3/4;
-    background-image: url(/assets/img/tarjeta.jpg);
+    background-image: url(../assets/img/tarjeta.jpg);
     width: 250px;
     box-shadow: 1px 1px 5px rgb(173, 171, 171);
     border: solid rgba(3, 133, 255, 0) 2px;
@@ -224,7 +224,7 @@ h1{
 .card__producccion-2{
     grid-column: 2/3;
     grid-row: 3/4;
-    background-image: url(/assets/img/tarjeta.jpg);
+    background-image: url(../assets/img/tarjeta.jpg);
     width: 250px;
     box-shadow: 1px 1px 5px rgb(173, 171, 171);
     border: solid rgba(3, 133, 255, 0) 2px;
@@ -234,7 +234,7 @@ h1{
 .card__producccion-3{
     grid-column: 3/4;
     grid-row: 3/4;
-    background-image: url(/assets/img/tarjeta.jpg);
+    background-image: url(../assets/img/tarjeta.jpg);
     width: 250px;
     box-shadow: 1px 1px 5px rgb(173, 171, 171);
     border: solid rgba(3, 133, 255, 0) 2px;
