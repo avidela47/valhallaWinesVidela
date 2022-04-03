@@ -327,7 +327,24 @@ h1{
         width: 15px;
         height: 15px;
     }
-    
+    .mapas{
+        height: 100px;
+        width: 250px;
+    }
+    .visitanos h2{
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 15px;
+        color: black;
+    }
+    .visitanos .visitanos-contacto a{
+        font-weight: 300;
+        font-size: 9px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        display:flex;
+        letter-spacing: 5px;
+    }
 }
 
 
