@@ -7,23 +7,16 @@ body{
     background-attachment: fixed;
 }
 
-/* Index  - Menu Navegacion -*/
+/* Index  - Menu Navegacion - */
 
-.navbar{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    align-items: center;
-}
-.navbar .logo{
-    width: 85px;
-    height: 85px;
-}
-.logo {
+.logo{
+    width: 80px;
+    height: 80px;
     animation-name: logoAnimation;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
 }
- @keyframes logoAnimation {
+@keyframes logoAnimation {
     0% {
       opacity: 1;
       transform: rotateY(0deg);
@@ -60,36 +53,23 @@ body{
       transform: rotateY(360deg);
     }
 }
-.navbar .menu{
-    grid-column: 5/ 8;
-    display: flex;
-    justify-content: space-around;
-}
-.navbar .menu li{
-    list-style: none;
-}
-.navbar .menu a{
-    text-decoration: none;
-    color: white;
+.navbar-nav{
     font-size: 20px;
     background: linear-gradient(to bottom right, red, yellow);
    -webkit-background-clip: text;
-   background-clip: text; 
+    background-clip: text; 
    -webkit-text-fill-color: transparent;
 }
-.navbar .menu a:hover{
-    background:linear-gradient(180deg, #fbde74 0%, #ff9900 100%);
+.navbar-nav a:hover{
+    background: linear-gradient(180deg, #fbde74 0%, #ff9900 100%);
     transition: all .3s;
     -webkit-background-clip: text;
     background-clip: text;
    -webkit-text-fill-color: transparent;
 }
-.navbar .menu-bar{
-    display: none;
-    color: aliceblue;
-}
+
+/* Index  - h1 - */
 h1{
-    color: #fff;
     background-position: center center;
     font-family: 'Cinzel Decorative', cursive;
     text-align: center;
@@ -97,7 +77,7 @@ h1{
     margin: 10px 0;
     padding: 0;
     animation: escribir 5s steps(30) infinite alternate;
-    font-size: 50px;  
+    font-size: 3rem;  
     background: linear-gradient(to bottom right, red, yellow);
     -webkit-background-clip: text;
     background-clip: text; 
@@ -108,546 +88,107 @@ h1{
     to { width:90% }
 }
 
-/* Index - grid */
-
-.grd1{
-    width: 100%;
-    height: 950px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 100px 1fr;
-    align-items: stretch;
-    justify-content: space-around;
-    justify-items: center;
-}
-
-/* Index - Slide */
-
-.slide {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    height: 280px;
-}
-.slide-open:checked + .slide-item {
-    position: static;
-    opacity: 100;
-}
-.slide-item {
-    position:absolute;
-    opacity: 0;
-    transition: opacity 0.6s ease-out;
-}
-.slide-item img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-    background-size: cover;
-}
-.slide-control {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 120%;
-    cursor: pointer;
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 10;
-}
-.slide-control.prev {
-    left: 2%;
-}
-.slide-control.next {
-    right: 2%;
-}
-.slide-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
-}
-#slide-1:checked ~ .control-1,
-#slide-2:checked ~ .control-2,
-#slide-3:checked ~ .control-3 {
-    display: block;
-}
-.slide-indicador {
-    list-style: none;
-    padding: 0;
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 10;
-}
-.slide-indicador li {
-    display: inline-block;
-}
-.slide-circulo {
-    color: #828282;
-    cursor: pointer;
-    display: block;
-    font-size: 100px;
-}
-.slide-circulo:hover {
-    color: #aaaaaa;
-}
-#slide-1:checked ~ .control-1 ~ .slide-indicador 
-     li:nth-child(1) .slide-circulo,
-#slide-2:checked ~ .control-2 ~ .slide-indicador 
-      li:nth-child(2) .slide-circulo,
-#slide-3:checked ~ .control-3 ~ .slide-indicador 
-      li:nth-child(3) .slide-circulo {
-    color: #60dac9;
-}
-
 /* Index - Section - Tarjetas */
 
-.card__producccion-1{
-    grid-column: 1/2;
-    grid-row: 3/4;
-    background-image: url(../assets/img/tarjeta.jpg);
-    width: 250px;
+.card{
+    color: #fff;
     box-shadow: 1px 1px 5px rgb(173, 171, 171);
     border: solid rgba(3, 133, 255, 0) 2px;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    gap: 15px 15px;
-    
-}
-.card__producccion-2{
-    grid-column: 2/3;
-    grid-row: 3/4;
-    background-image: url(../assets/img/tarjeta.jpg);
-    width: 250px;
-    box-shadow: 1px 1px 5px rgb(173, 171, 171);
-    border: solid rgba(3, 133, 255, 0) 2px;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-}
-.card__producccion-3{
-    grid-column: 3/4;
-    grid-row: 3/4;
-    background-image: url(../assets/img/tarjeta.jpg);
-    width: 250px;
-    box-shadow: 1px 1px 5px rgb(173, 171, 171);
-    border: solid rgba(3, 133, 255, 0) 2px;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-}
-.card__producccion-1__uvas__fototargeta{
-    width: 120px;
-    border-radius: 50%;
-}
-.card__producccion-2__uvas__fototargeta{
-    width: 120px;
-    border-radius: 50%;
-}
-.card__producccion-3__uvas__fototargeta{
-    width: 120px;
-    border-radius: 50%;
-}
-h2{
-    text-align: center;
-    font-size:medium;
-}
-.txt{
+    background-image: url(/root/assets/img/fondotarjetabody.jpg);
+    width: 200px;
     font-family: 'Poppins', sans-serif;
     font-size: 11px;
-    letter-spacing: 2pt;
     text-align: center;
+    justify-content: stretch;
+    padding: 1em;
 }
-.card__producccion-1__uvas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;;
+.card-img-top{
+    width: 120px;
 }
-.card__producccion-2__uvas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;;
-}
-.card__producccion-3__uvas{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;;
-}
-hr{
-    width: 70%;
-    height: 1px;
-    background: #828282;
-    margin: 20px 5px;
-}
-
-/* Vinos grid*/
-
-.contenido{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
-    gap: 30px 30px;
-    justify-items: center;
-    align-items: stretch;
-    justify-content: space-between;   
+.card-title{
+    font-size: 20px;
+    background: linear-gradient(to bottom right, red, yellow);
+   -webkit-background-clip: text;
+    background-clip: text; 
+   -webkit-text-fill-color: transparent;
 }
 
 /* Vinos */
 
-.contenido__envases_1{
-    width: 160px;
-    height: 500px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(207, 35, 35, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.3s;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-.contenido__envases_2{
-    width: 170px;
-    height: 500px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(207, 35, 35, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.3s;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-}
-.contenido__envases_3{
-    width: 150px;
-    height: 500px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(207, 35, 35, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.3s;
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-}
-.contenido__envases_4{
-    width: 150px;
-    height: 500px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(207, 35, 35, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.3s;
-    grid-column: 4 / 5;
-    grid-row: 1 / 2;
-}
-.contenido__envases_5{
-    width: 150px;
-    height: 500px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px rgba(207, 35, 35, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.3s;
-    grid-column: 5 / 6;
-    grid-row: 1 / 2;
-}
-.contenido__envases_1:hover{
-    background-image: url(/assets/img/nosotrosPortada.jpg);
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-.contenido__envases_2:hover{
-    background-image: url(/assets/img/nosotrosPortada.jpg);
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-.contenido__envases_3:hover{
-    background-image: url(/assets/img/nosotrosPortada.jpg);
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-.contenido__envases_4:hover{
-    background-image: url(/assets/img/nosotrosPortada.jpg);
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-.contenido__envases_5:hover{
-    background-image: url(/assets/img/nosotrosPortada.jpg);
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
-}
-.contenido__envases__botella{
-    border-radius: 5%;
-}
-.contenido__envases__botella__pv{
+.vinos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    border-radius: 20px;
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
-    margin-top: 40px;
-    color: rgb(255, 255, 255);
-}
-.contenido__btn{
-    text-align: center;
-    margin-top: 50px;
-}
-.enlace{
-    background: #201a35;
-    padding: 8px 25px;
-    color: rgb(177, 145, 6);
-    text-decoration: none;
-}
-.enlace:hover{
-    background-color: #24262b;
-    color: #f0b3b3;
-}
-.portada__nts{
-    width: 1348px;
-    height: 410px;
-    position: absolute;
-}
-
-/* Nosotros grid*/
-
-.nosotros{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    font-size: 11px;
     padding: 1em;
-    gap: 5px 60px;
+}
+
+.vinos-title{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+.vinos-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    justify-content: stretch;
+    padding: 1em;
+    color: #ffffff;
+}
+.btn{
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(83, 236, 147);
+    background-color: rgb(235, 10, 10);
 }
 
 /* Nosotros */
 
-.caja{
-    background-image: url(/assets/img/clima2.jpg);
+.card-nosotros{
+    color: #fff;
+    width: 45rem;
     font-family: 'Poppins', sans-serif;
-    width: 800px;
-    height: 300px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px 0 rgb(255, 255, 255);
-    overflow:hidden;
-    margin: 20px;
-    text-align:center;
-    display:flex;
-    padding-bottom: 3em;
-    transition: all 1s;
-}
-.texto{
-    font-family: 'Cinzel Decorative', cursive;
-    color: #ffffff;
-    font-size: 25px;
-}
-.caja > div{
-    width: 100%;
-    padding: 10px;
-}
-.caja:hover{
-    transform: translateX(200px);
-    box-shadow: 0 16px 16px rgb(0, 0, 0);
-}
-.caja__img_1{
-    border-radius: 50%;
-    width: 350px;
-    height: 200px;
-}
-.caja2{
-    background-image: url(/assets/img/portadanosotros.jpg);
-    font-family: 'Poppins', sans-serif;
-    width: 800px;
-    height: 300px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px 0 rgb(15, 15, 15);
-    overflow:hidden;
-    margin: 20px 20px 0 500px;
+    font-size: 11px;
     text-align: center;
-    display:flex;
-    padding-bottom: 3em;
-    transition: all 1s;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-}
-.caja2 > div{
-    width: 100%;
-    padding: 10px;
-}
-.caja2:hover{
-    transform: translateX(-200px);
-    box-shadow: 0 16px 16px rgb(0, 0, 0);
-}
-.caja2__img_1{
-    border-radius: 50%;
-    width: 350px;
-    height: 200px;
-}
-.caja3{
-    background-image: url(/assets/img/nosotros_p.jpg);
-    font-family: 'Poppins', sans-serif;
-    width: 800px;
-    height: 300px;
-    border-radius: 8px;
-    box-shadow: 0 2px 2px 0 rgb(15, 15, 15);
-    overflow:hidden;
+    justify-content: stretch;
     margin: 20px;
-    text-align: center;
-    display:flex;
-    padding-bottom: 3em;
-    transition: all 1s;
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
+    gap: 5px 60px;
+    letter-spacing: 3px;
 }
-.caja3 > div{
-    width: 100%;
-    padding: 10px;
-}
-.caja3:hover{
-    transform: translateX(200px);
-    box-shadow: 0 16px 16px rgb(0, 0, 0);
-}
-.caja3__img_1{
-    border-radius: 50%;
-    width: 350px;
-    height: 200px;
-}
-
-/* Tienda grid */
-
-.super{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr 50px;
-    gap: 30px 30px;
-    justify-items: center;
-    align-items: stretch;
-    justify-content: space-between;   
-}
-
 
 /* Tienda */
 
-.almacen-1{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-.almacen-2{
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-.almacen-3{
-    grid-column: 3/4;
-    grid-row: 1/2;
-}
-.almacen-4{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-.almacen-5{
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-.almacen-6{
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-.envio{
-    grid-column: 2/4;
-    grid-row: 3/4;
-}
-.tienda{
-    position: relative;
-    width: 300px;
-    height: 450px;
-    padding-bottom: 4em;
-}
-.tienda .virtual{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s;
-}
-.tienda .frente{
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px black;
-}
-.tienda .frente .imgp{
-    position:absolute;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-.tienda .frente h3{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    background: rgba(0, 0, 0, .4);
-    text-align: center;
-}
-.tienda .atras{
-    transform: perspective(600px) rotateY(180deg);
-    background-image: url(/assets/img/nosotrosPortada.jpg);
-    padding: 15px;
-    color: rgb(241, 239, 239);
+.card-tienda{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 30rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
     text-align: center;
-    box-shadow: 0 5px 10px black;
-    background-size: cover;
-}
-.tienda .atras h3{
-    color: #ffffff;
-    font-size: 30px;
-    margin-bottom: 5px;
+    margin: 20px;
     letter-spacing: 2px;
 }
-.tienda .atras .precio{
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 1px;
-    color: #000000;
-    font-size: 12px;
+.fa-solid{
+    background: linear-gradient(to bottom right, rgb(115, 12, 212), rgb(219, 23, 23));
+    -webkit-background-clip: text;
+    background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
-.comprar a{
-    text-decoration: none;
-    color: #000000;
-}
-.comprar a:hover{
-    color: #201a35;
-}
-.carrito{
-    color: #000000;
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-}
-.costo{
-    color: #000000;
-    font-size: 23px;
-}
-.tienda:hover .frente{
-    transform: perspective(600px) rotateY(180deg);
-}
-.tienda:hover .atras{
-    transform: perspective(600px) rotateY(360deg);
+.fa-solid:hover{
+    background: linear-gradient(180deg, #14c414 0%, #ff006a 100%);
+    transition: all .3s;
+    -webkit-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color: transparent;
 }
 .envio{
-    font-family: 'Poppins', sans-serif;
-    display: inline-flex;
-    width: 100%;
-    color: rgb(41, 40, 40);
-    letter-spacing: 2px;
+    display: flex;
 }
 
 /* Contacto - Formulario */
@@ -732,9 +273,9 @@ hr{
     font-weight: 300;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-decoration: none;
-    display:inline-block;
+    display:flex;
     letter-spacing: 5px;
 }
 .mapas{
@@ -744,289 +285,59 @@ hr{
 
 /* Footer */
 
-.contenedor{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    justify-content: space-between;
-}
-ul{
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
-}
-.footer{
-    background-color: rgba(255,255,255,0.1);
-    padding: 30px 10px;
-}
-.footer-col{
-    width: 80%;
-}
-.footer-col h4{
-    font-weight: 500;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    text-transform: capitalize;
-    margin-bottom: 35%;
-    position:relative;
-}
-.footer-col h4::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #e91e63;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-}
-.footer-col ul li:not(:last-child){
-    margin-bottom: 10px;
-}
-.footer-col ul li a{
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    text-transform: capitalize;
-    color: rgb(255, 254, 255);
-    text-decoration: none;
-    font-weight: 300;
-    color: rgb(255, 255, 255);
-    display: block;
-    transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-    color: #ffffff;
-    padding-left: 8px;
-}
-.footer-col .redes-sociales a{
-    display: inline-block;
-    height: 40px;
-    width: 40px;
+.text-center{
     background-color: rgba(255,255,255,0.2);
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #ffffff;
-    transition: all 0.5s ease;
 }
-.footer-col .redes-sociales a:hover{
-    color: #24262b;
-    background-color: #ffffff;
+.mb-4{
+    background: linear-gradient(to bottom right, red, rgb(130, 10, 228));
+   -webkit-background-clip: text;
+    background-clip: text; 
+   -webkit-text-fill-color: transparent;
 }
+.txtf{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(0, 0, 0);
+}
+.text-footer{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Media Queries */
 
 @media screen and (max-width: 767px) {
-
-    /* Index  - Menu Navegacion */
-
-    .navbar .menu{
-        display: none;
-    }
-    .navbar .menu-bar{
-        display: block;
-        grid-column: 8 / 9;
-        font-size: 2em;
-        color: white;
-    }
-    .navbar .logo{
+    .logo{
         width: 35px;
         height: 35px;
     }
     h1{
-        font-size: 20px;
-    }
-    .grd1{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        gap: 5px 5px;
-        align-items: stretch;
-    }
-    .slide {
-        grid-column: 1/2;
-        grid-row: 1/2;
-        width: 320px;
-        height: 80px;
-    }
-    .slide-indicador{
-        grid-column: 1/2;
-        grid-row: 2/3;
-        display: none;
-    }
-    .card__producccion-1{
-        grid-column: 1/2;
-        grid-row: 3/4;
-        width: 200px;
-        height: 280px;
-        font-size: 8px;
-    }
-    .card__producccion-2{
-        grid-column: 1/2;
-        grid-row: 4/5;
-        width: 200px;
-        height: 280px;
-        font-size: 8px;
-    }
-    .card__producccion-3{
-        grid-column: 1/2;
-        grid-row: 5/6;
-        width: 200px;
-        height: 280px;
-        font-size: 8px;
-    }
-    .card__producccion-1__uvas__fototargeta{
-        border-radius: 50%;
-        width: 80px;
-        height: 80px;
-    }
-    .card__producccion-2__uvas__fototargeta{
-        border-radius: 50%;
-        width: 80px;
-        height: 80px;
-    }
-    .card__producccion-3__uvas__fototargeta{
-        border-radius: 50%;
-        width: 80px;
-        height: 80px;
-    }
-    h2{
-        font-size: 10px;
-    }
-    .txt{
-        font-size: 7px;
-    }
-    
-    /* Vinos */
-
-    .contenido{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 1fr);
-        gap: 5px 5px;
-    }
-    .contenido__envases_1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .contenido__envases_2{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }.contenido__envases_3{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .contenido__envases_4{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    .contenido__envases_5{
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-
-    /* Nosotros */
-    
-    .nosotros{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        gap: 5px 5px;
-    }
-    .caja{
-        width: 250px;
-        height: 300px;
-    }
-    .caja2{
-        width: 250px;
-        height: 300px;
-        margin: 20px;
-    }
-    .caja3{
-        width: 250px;
-        height: 300px;
-    }
-    .texto{
-        font-family: 'Cinzel Decorative', cursive;
-        color: #ffffff;
         font-size: 15px;
     }
-    .caja__txt_p{
-        font-size: 8px;
-    }
-    .caja2__txt_p{
-        font-size: 8px;
-    }
-    .caja__img_1{
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-    }
-    .caja2__img_1{
-        border-radius: 50%;
-        width: 120px;
-        height: 120px;
-    }
-
-    /* Tienda */
-
-    .super{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr) 100px;
-    }
-    .almacen-1{
-        grid-column: 1/2;
-        grid-row: 1/2;
-    }
-    .almacen-2{
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-    .almacen-3{
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    .almacen-4{
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-    .almacen-5{
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-    .almacen-6{
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-    .envio{
-        grid-column: 1/2;
-        grid-row: 7/8;
+    .card-nosotros{
+        width: 18rem;
+        font-size: 6px;
+    } 
+    .card-title{
         font-size: 10px;
-        display: block;
     }
-
-    /* Contacto */
-
-    .visitanos{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    gap: 5px;
-    line-height: 20px;
-    padding: 15px;
-    }
-    .visitanos h2{
-        font-family: 'Cinzel Decorative', cursive;
-        font-size: 15px;
-        color: black;
-        grid-row: 1/2;
-    }
-        .mapas{
-        height: 150px;
-        width: 200px;
-        grid-row: 2/3;
-    }
-    .visitanos .visitanos-contacto a{
+    .navbar-nav{
         font-size: 8px;
-        grid-column: 3/3;
-        letter-spacing: 3px;
+    }
+    .navbar-toggler-icon{
+        width: 15px;
+        height: 15px;
     }
 }
 
@@ -1046,4 +357,22 @@ ul{
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
