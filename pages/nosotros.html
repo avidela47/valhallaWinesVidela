@@ -4,89 +4,114 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>valhallawines</title>
-  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
-  <link rel="shortcut icon" href="/assets/img/icono.png">
+  <link rel="stylesheet" type="text/css" href="../css/normalize.css">
+  <link rel="shortcut icon" href="../assets/img/icono.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <img class="logo" src="/assets/img/logo.png" alt="Valhalla Wineries & Beers">
-      <ul class="menu">
-        <li><a href="/index.html">Inicio</a></li>
-        <li><a href="/pages/vinos.html">Vinos</a></li>
-        <li><a href="/pages/nosotros.html">Nosotros</a></li>
-        <li><a href="/pages/tienda.html">Tienda</a></li>
-        <li><a href="/pages/contacto.html">Contacto</a></li>
-      </ul>
-      <div class="menu-bar">
-        <i class="fa-solid fa-bars"></i>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <img class="logo" src="../assets/img/logo.png" alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./vinos.html">Vinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-  </header>
     <h1>Quienes somos</h1>
-      <div class="nosotros">
-        <div class="caja">
-          <div class="caja__txt">
-            <h2 class="texto">Nuestra Seleccion</h2>
-              <p class="caja__txt_p">Todos nuestros vinos son especiales, únicos y diferentes. Por la región donde se producen, por el clima de dónde se cosechan, por su proceso de producción, plantación y cuidado, y por la historia detrás de cada una de nuestras bodegas. Imprimiéndose así en cada botella el esfuerzo, el alma y la pasión de quiénes los hacen. Vinos que cuentan historias. Nosotros te acercamos estos vinos para que los conozcas, disfrutes y te sorprendas.</p>
-          </div>
-          <div class="caja__img">
-            <img class="caja__img_1" src="/assets/img/nosotros2.jpg" alt="">
-          </div>
-        </div>
-        <div class="caja2">
-          <div class="caja2__txt">
-            <h2 class="texto" >Nuestra Historia</h2>
-              <p class="caja2__txt_p">Conectando el pasado, el presente y el futuro, dos generaciones de Valhalla Wines & Beers expresamos 80 años de excelencia mientras nos proyectamos hacia el futuro respetando nuestras raíces y destacando la singularidad del terruño mendocino.</p>
-          </div>
-          <div class="caja2__img">
-            <img class="caja2__img_1" src="/assets/img/fondotrjeta.png" alt="">
-          </div>
-        </div>
-        <div class="caja3">
-          <div class="caja__txt">
-            <h2 class="texto">Nuestro Proyecto</h2>
-              <p class="caja__txt_p">Acercar a los amantes del vino y la cerveza para atraer a nuevos consumidores conectándolos con nuestros vinos boutique y cervezas artesanales únicos en el mercado, de esa manera aar a conocer nuestra maravillosa variedad de vinos y cervezas. Creemos que cada vino y cerveza tiene su propia historia, y nuestro trabajo es llevar esas historias a cada uno de ustedes!</p>
-          </div>
-          <div class="caja__img">
-            <img class="caja__img_1" src="/assets/img/nosotros3.jpg" alt="">
-          </div>
-        </div>
-      </div>
-  <footer>
-    <div class="footer">
-      <div class="contenedor">
-        <div class="footer-col">
-          <h4>Empresa</h4>
-            <ul>
-              <li><a href="#">vinos</a></li>
-              <li><a href="#">nosotros</a></li>
-              <li><a href="#">tienda online</a></li>
-              <li><a href="#">contacto</a></li>
-            </ul>
-      </div>
-        <div class="footer-col">
-          <h4>Tienda online</h4>
-            <ul>
-              <li><a href="#">vinos tintos</a></li>
-              <li><a href="#">vinos blancos</a></li>
-              <li><a href="#">vinos espumantes</a></li>
-              <li><a href="#">cerveza</a></li>
-            </ul>
-        </div>
-          <div class="footer-col">
-            <h4>Seguinos</h4>
-          <div class="redes-sociales">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
+    <div class="card-nosotros ratio ratio-16x9">
+      <video src="../assets/videos/barril.mp4" autoplay loop muted poster=""></video>
+      <div class="card-body">
+        <h5 class="card-title">Nuestro Proyecto</h5>
+        <p class="card-text">Acercar a los amantes del vino y la cerveza para atraer a nuevos consumidores conectándolos con nuestros vinos boutique y cervezas artesanales únicos en el mercado, de esa manera aar a conocer nuestra maravillosa variedad de vinos y cervezas. Creemos que cada vino y cerveza tiene su propia historia, y nuestro trabajo es llevar esas historias a cada uno de ustedes!</p>
       </div>
     </div>
-  </footer>
+    <div class="card-nosotros ratio ratio-16x9 ms-auto">
+      <video src="../assets/videos/Wine - 56914.mp4" autoplay loop muted poster=""></video>
+      <div class="card-body">
+        <h5 class="card-title">Nuestra Seleccion</h5>
+        <p class="card-text">Todos nuestros vinos son especiales, únicos y diferentes. Por la región donde se producen, por el clima de dónde se cosechan, por su proceso de producción, plantación y cuidado, y por la historia detrás de cada una de nuestras bodegas. Imprimiéndose así en cada botella el esfuerzo, el alma y la pasión de quiénes los hacen. Vinos que cuentan historias. Nosotros te acercamos estos vinos para que los conozcas, disfrutes y te sorprendas.</p>
+      </div>
+    </div>
+    <div class="card-nosotros ratio ratio-16x9">
+      <video src="../assets/videos/180825_19_wine.mp4" autoplay loop muted poster=""></video>
+      <div class="card-body">
+        <h5 class="card-title">Nuestra Historia</h5>
+        <p class="card-text">Conectando el pasado, el presente y el futuro, dos generaciones de Valhalla Wines & Beers expresamos 80 años de excelencia mientras nos proyectamos hacia el futuro respetando nuestras raíces y destacando la singularidad del terruño mendocino.</p>
+      </div>
+    </div>
+      <footer class="text-center text-lg-start">
+        <div class="container p-4 pb-0">
+          <section class="footer">
+            <div class="row">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="mb-4">Valhalla Wines & Beers</h6>
+                  <p class="txtf">Nuestros productos 100% artesanales te harán conocer el poder del mismísimo Odín. ¡Prueba las recetas únicas de los dioses nórdicos!</p>
+              </div>
+                <hr class="w-100 clearfix d-md-none"/>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="mb-4">Empresa</h6>
+                  <p class="txtf"><a class="text-footer">Vinos</a></p>
+                  <p class="txtf"><a class="text-footer">Nosotros</a></p>
+                  <p class="txtf"><a class="text-footer">Tienda online</a></p>
+                  <p class="txtf"><a class="text-footer">Contacto</a></p>
+              </div>
+                <hr class="w-100 clearfix d-md-none"/>
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h6 class="mb-4">Tienda online</h6>
+                  <p class="txtf"><a class="text-footer">Vinos Tintos</a></p>
+                  <p class="txtf"><a class="text-footer">Vinos Blancos</a></p>
+                  <p class="txtf"><a class="text-footer">Vinos Espumantes</a></p>
+                  <p class="txtf"><a class="text-footer">Cerveza</a></p>
+              </div>
+                <hr class="w-100 clearfix d-md-none"/>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="mb-4">Contacto</h6>
+                  <p class="txtf"><i class="fas fa-home mr-3"></i>Esmeralda 535 - Cordoba - Argentina</p>
+                  <p class="txtf"><i class="fas fa-envelope mr-3"></i> info@valhallawines.net</p>
+                  <p class="txtf"><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                  <p class="txtf"><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+              </div>
+            </div>
+          </section>
+            <hr class="my-3">
+          <section class="p-3 pt-0">
+            <div class="row d-flex align-items-center">
+              <div class="col-md-7 col-lg-8 text-center text-md-start">
+                <div class="p-3">
+                  © 2022 Copyright: Valhalla Wines & Beers
+                </div>
+              </div>
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-facebook-f"></i></a>
+              <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-twitter"></i></a>
+              <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-google"></i></a>
+              <a class="btn btn-outline-light btn-floating m-1" role="button"><i class="fab fa-instagram"></i></a>
+            </div>
+            </div>
+          </section>
+        </div>
+      </footer>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
