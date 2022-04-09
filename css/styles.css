@@ -306,7 +306,7 @@ h1{
     color: rgb(0, 0, 0);
 }
 
-/* Media Queries */
+/* Media Queries Smartphone */
 
 @media screen and (max-width: 767px) {
     .logo{
@@ -319,6 +319,99 @@ h1{
     .card-nosotros{
         width: 18rem;
         font-size: 6px;
+    } 
+    .card-title{
+        font-size: 10px;
+    }
+    .navbar-nav{
+        font-size: 1rem;
+    }
+    .navbar-toggler-icon{
+        width: 15px;
+        height: 15px;
+    }
+    .let{
+        font-size: 10px;
+    }
+    .mapas{
+        height: 100px;
+        width: 250px;
+    }
+    .visitanos h2{
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 15px;
+        color: black;
+    }
+    .visitanos .visitanos-contacto a{
+        font-weight: 300;
+        font-size: 9px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        display:flex;
+        letter-spacing: 5px;
+    }
+}
+
+/* Media Queries Tablet */
+
+@media screen and (min-width: 768px) {
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .card-nosotros{
+        width: 25rem;
+        font-size: 6px;
+    } 
+    .card-title{
+        font-size: 10px;
+    }
+    .navbar-nav{
+        font-size: 1rem;
+    }
+    .navbar-toggler-icon{
+        width: 15px;
+        height: 15px;
+    }
+    .let{
+        font-size: 10px;
+    }
+    .mapas{
+        height: 100px;
+        width: 250px;
+    }
+    .visitanos h2{
+        font-family: 'Cinzel Decorative', cursive;
+        font-size: 15px;
+        color: black;
+    }
+    .visitanos .visitanos-contacto a{
+        font-weight: 300;
+        font-size: 9px;
+        font-family: 'Poppins', sans-serif;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        display:flex;
+        letter-spacing: 5px;
+    }
+}
+/* Media Queries Desktop */
+
+@media screen and (min-width: 1025px) {
+    .logo{
+        width: 50px;
+        height: 50px;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    .card-nosotros{
+        width: 50rem;
+        font-size: 16px;
     } 
     .card-title{
         font-size: 10px;
