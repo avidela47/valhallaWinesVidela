@@ -5,7 +5,6 @@
 @import "./partials/variables";
 
 
-
 /* Titulos -H1 */
 
 h1{
@@ -60,7 +59,7 @@ h1{
       width: auto;
       border-radius: 20px;
       font-family: $fontf-vs;
-      font-size: $font-p+0.1;
+      font-size: ($font-p + 0.1);
       padding: 1em;
       color: $color-tx-b;
             .title{
@@ -70,11 +69,17 @@ h1{
                   text-align: center;
                    }
         }
+
+        /* Mixin */
+@mixin sizes ($color, $font-size, $font-family, $background-color){
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $color;
+    background-color: $background-color;
+}
+
 .btn{
-    font-size: $font-p;
-    font-family: $fontf-vs;
-    color: rgb(83, 236, 147);
-    background-color: rgb(235, 10, 10);
+    @include sizes (rgb(83, 236, 147), $font-p, $fontf-vs, $btnD);
     }
 
 /* Nosotros */
@@ -91,7 +96,38 @@ h1{
               letter-spacing: 3px;
               }
 
-/* Tienda */
+/* Tienda Ofertas*/
+
+.card2{
+    color: $color-tx-b;
+    box-shadow: $box-shadow-card;
+    border: solid rgba(3, 133, 255, 0) 2px;
+    background-image: url(../assets/img/tiendaatras.jpg);
+    width: 200px;
+    height: 300px;
+    font-family: $fontf-vs;
+    font-size: $font-p;
+    text-align: center;
+    justify-content: space-between;
+    padding: 1em;
+    margin: 50px;
+              .card-title{
+                            font-size: $font-h5;
+                            background: $background-fontgr;
+                           -webkit-background-clip: text;
+                            background-clip: text; 
+                           -webkit-text-fill-color: transparent;
+                          }
+}
+
+/* Extend*/
+
+.card2{
+    @extend .card2;
+    background-image: url(../assets/img/fondotarjetabody.jpg);
+}
+
+   /* Tienda Tienda*/
 
 .card-tienda{
             align-items: center;
@@ -101,7 +137,7 @@ h1{
             font-family: $fontf-vs;
             font-size: $font-p;
             text-align: center;
-            margin: 20px;
+            margin: 50px;
             letter-spacing: 2px;
                .title{
                     font-size: $font-h5;  
@@ -218,6 +254,23 @@ h1{
     height: 200px;
     width: 350px;
 }
+
+/* Declaracion del mapa */
+
+$redes-sociales: (facebook: #3a5795, twitter: #55acee, google: #C25E30, instagram: #DD2A7B);
+
+/*Bucle*/
+
+@each $red-social, $color in $redes-sociales {
+   .btn--#{$red-social} {
+       background-color: $color;
+   }
+}
+
+
+
+
+
 
 @import "./partials/media-queries"
 
