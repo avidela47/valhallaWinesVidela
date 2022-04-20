@@ -25,7 +25,7 @@ h1{
                            from { width: 100% }
                            to { width:90% }
                            }
-   }
+}
 
 /* Index - Section - Tarjetas */
 
@@ -48,7 +48,7 @@ h1{
                               background-clip: text; 
                              -webkit-text-fill-color: transparent;
                             }
-     }
+}
 
 /* Vinos */
 
@@ -68,7 +68,7 @@ h1{
                   font-size: $font-h5;
                   text-align: center;
                    }
-        }
+}
 
         /* Mixin */
 @mixin sizes ($color, $font-size, $font-family, $background-color){
@@ -80,7 +80,7 @@ h1{
 
 .btn{
     @include sizes (rgb(83, 236, 147), $font-p, $fontf-vs, $btnD);
-    }
+}
 
 /* Nosotros */
 
@@ -94,7 +94,7 @@ h1{
               margin: 20px;
               gap: 5px 60px;
               letter-spacing: 3px;
-              }
+}
 
 /* Tienda Ofertas*/
 
@@ -146,7 +146,7 @@ h1{
                     background-clip: text; 
                     -webkit-text-fill-color: transparent;
                       }
-            }
+}
 .fa-solid{
           background: linear-gradient(to bottom right, rgb(115, 12, 212), rgb(219, 23, 23));
           -webkit-background-clip: text;
@@ -159,10 +159,10 @@ h1{
                    background-clip: text;
                    -webkit-text-fill-color: transparent;
                    }
-         }
+}
 .envio{
       display: flex;
-      }
+}
                     
 /* Contacto - Formulario */
 
@@ -239,7 +239,7 @@ h1{
                        font-size: 30px;
                        color: black;
                         }
-           }
+}
 .contacto a{
             font-weight: 300;
             font-size: $font-p;
@@ -248,7 +248,7 @@ h1{
             text-decoration: none;
             display:flex;
             letter-spacing: 5px;
-            }
+}
             
 .mapas{
     height: 200px;
@@ -264,15 +264,11 @@ $redes-sociales: (facebook: #3a5795, twitter: #55acee, google: #C25E30, instagra
 @each $red-social, $color in $redes-sociales {
    .btn--#{$red-social} {
        background-color: $color;
-   }
+    }
 }
 
-
-
-
-
-
 @import "./partials/media-queries"
+
 
 
 
