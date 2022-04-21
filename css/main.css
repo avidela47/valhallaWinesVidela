@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,800;1,400&family=Poppins:wght@300;400;500;700&family=Roboto:ital,wght@0,100;0,300;1,300;1,400&display=swap");
 /* Index  - Body */
 body {
-  background-image: url(../assets/img/fondobody.jpg);
+  background-image: url(../assets/img/fondobody.png);
   font-family: "Cinzel Decorative", cursive;
   background-size: cover;
   background-attachment: fixed; }
@@ -99,7 +99,7 @@ h1 {
   color: #fff;
   box-shadow: 1px 1px 5px #adabab;
   border: solid rgba(3, 133, 255, 0) 2px;
-  background-image: url(../assets/img/fondotarjetabody.jpg);
+  background-image: url(../assets/img/fondotarjetabody.png);
   width: 200px;
   height: 500px;
   font-family: "Poppins", sans-serif;
