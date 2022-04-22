@@ -199,7 +199,7 @@ h1 {
   background-clip: text;
   -webkit-text-fill-color: transparent; }
   .fa-solid:hover {
-    background: linear-gradient(180deg, #14c414 0%, #ff006a 100%);
+    background: linear-gradient(180deg, #14c414 0%, #e93c84 100%);
     transition: all .3s;
     -webkit-background-clip: text;
     background-clip: text;
