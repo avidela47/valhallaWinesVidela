@@ -206,7 +206,9 @@ h1 {
     -webkit-text-fill-color: transparent; }
 
 .envio {
-  display: flex; }
+  display: flex;
+  font-size: 0.7rem;
+  font-family: "Poppins", sans-serif; }
 
 /* Contacto - Formulario */
 .contactanos .form .form-cabeceraf, h2 {
