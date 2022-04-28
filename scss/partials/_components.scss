@@ -1,0 +1,96 @@
+@import "./partials/variables";
+
+/* Index  - Body */
+
+body {
+      background-image: url(../assets/img/fondobody.jpg);
+      font-family: $fontf-h1;
+      background-size: cover;
+      background-attachment: fixed;
+}
+
+/* Index - Cabecera - Logo */
+
+.logo{
+      width: 80px;
+      height: 80px;
+      animation-name: logoAnimation;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+
+         @keyframes logoAnimation {
+         0% {
+         opacity: 1;
+         transform: rotateY(0deg);
+         }
+         12.5% {
+         transform: rotateY(45deg);
+         }
+         25% {
+         opacity: 1;
+         transform: rotateY(90deg);
+         }
+         37.5% {
+         opacity: 1;
+         transform: rotateY(135deg);
+         }
+         50% {
+         opacity: 1;
+         transform: rotateY(180deg);
+         }
+         62.5% {
+         opacity: 1;
+         transform: rotateY(225deg);
+         }
+         75% {
+         opacity: 1;
+         transform: rotateY(270deg);
+         }
+         87.5% {
+         opacity: 1;
+         transform: rotateY(315deg);
+         }
+         100% {
+         opacity: 1;
+         transform: rotateY(360deg);
+         }
+      }
+}
+
+/* Index - Cabecera - Navegacion */
+
+.navbar-nav{
+           font-size: 1.3rem;
+           background: linear-gradient(to bottom right, red, yellow);
+          -webkit-background-clip: text;
+           background-clip: text; 
+          -webkit-text-fill-color: transparent;
+            &:hover{
+                   background: linear-gradient(180deg, #fbde74 0%, #ff9900 100%);
+                   transition: all .3s;
+                   -webkit-background-clip: text;
+                   background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  }  
+            }
+
+/* Footer */
+
+.text-center{
+            background-color: rgba(255,255,255,0.2);
+              .mb-4{
+                    background: linear-gradient(to bottom right, red, rgb(21, 49, 28));
+                   -webkit-background-clip: text;
+                    background-clip: text; 
+                   -webkit-text-fill-color: transparent;
+                  }
+            }
+.txtf{
+      font-family: $fontf-vs;
+      color: rgb(0, 0, 0);
+          .text-footer{
+                      font-family: $fontf-vs;
+                      color: rgb(0, 0, 0);
+                      text-decoration: none;
+                      }
+      }
